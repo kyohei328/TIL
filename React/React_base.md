@@ -144,4 +144,53 @@ setIsPublished(true)
 - useState(false)でisPublishedに初期値としてfalseが入る。
 - 状態を更新する時はsetIsPublished(ture)でisPublishedにtrueを入れる
 
+4.よく使うもの
 
+```
+import React, { useState } from "react";
+
+const TextInput = () => {
+    const [name, setName] = useState('')
+
+    const handleName = (event) => {
+        setName(event.target.value)
+    }
+
+    return (
+        <input
+            onChange={(event) => handleName(event)}
+            type={'text'}
+            value={name}
+        />
+    );
+};
+
+export default TextInput;
+```
+## useEffect
+- 副作用　＝　レンダリングによって引き起こされる処理
+- 再レンダリングされるたびに呼び出したい処理を書く
+
+- 実行回数を制限できる
+- 第二引数はdeps(dependencies)と呼ばれて、副作用が引き起こされるかどうかの依存関係となる
+```
+//毎回実行される
+useEffect(() => {
+    console.log("Current count id ...", count)
+})
+
+//初回レンダリング後のみ実行される
+useEffect(() => {
+    console.log("Current count id ...", count)
+}, [])
+
+//triggerが変更されるたびに実行される
+useEffect(() => {
+    console.log("Current count id ...", count)
+}, [trigger])
+
+//trigger1かtrigger2が変更されるたびに実行される
+useEffect(() => {
+    console.log("Current count id ...", count)
+}, [trigger1, trigger2])
+```
