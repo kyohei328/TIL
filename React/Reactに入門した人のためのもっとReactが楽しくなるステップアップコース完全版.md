@@ -145,9 +145,9 @@ const Emotion = () => {
       <SButton>FIGHT!!</SButton>
     </div>
 ```
-他にはstyled componentsと同じ書き方が使える
+他にはstyled componentsと同じ書き方が使える　
 
-##　ページ遷移
+## ページ遷移　
 
 - <BrowserRouter>で囲われた部分でルーティングの機能が使えるようになる
 - exactは完全一致
