@@ -256,5 +256,22 @@ const UrlParameter = () => {
   
 ```
 
+## クエリパラメータ  
+useLocationをインポートする
+```
+import { useParams, useLocation } from "react-router-dom/cjs/react-router-dom.min";
+```
+クエリパラメータを取得して変数に入れる
+```
+const { search } = useLocation();
+```
+クエリパラメータを扱えるメソッドを設定するためにインスタンス変数を用意
+```
+const query = new URLSearchParams(search);
+```
+```
+//クエリパラメータを表示している
+const query = new URLSearchParams(search);
+```
 
 
