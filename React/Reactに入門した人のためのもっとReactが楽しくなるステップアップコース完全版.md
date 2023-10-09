@@ -237,5 +237,24 @@ const Page1Routes = [
 ```
 その後、親コンポーネントで呼び出す。<Router />
 
+## URLパラメータ
+
+- パスは”/:id”と書く
+```
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+const UrlParameter = () => {
+    const { id } = useParams();
+    return (
+      <div>
+        <h1>UrlParameterページです</h1>
+        <p>パラメータは{id}です</p>
+      </div>
+    )
+  }
+  
+  export default UrlParameter;
+  
+```
+
 
 
