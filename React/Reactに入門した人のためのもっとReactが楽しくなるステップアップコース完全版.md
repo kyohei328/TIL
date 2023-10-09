@@ -191,4 +191,51 @@ const Emotion = () => {
       </Switch>
     </BrowserRouter>
 ```
+- ルーティングが多いとき分割した方が見やすくなる。  
+分け方としては下記のよう
+```
+//Page1Routes.jsx　ルートを配列にしておく(ネストが深い部分)
+const Page1Routes = [
+    {
+        path: "/",
+        exact: true,
+        children: <Page1 />
+    },
+    {
+        path: "/detailA",
+        exact: false,
+        children: <Page1DetailA />
+    },
+    {
+        path: "/detailB",
+        exact: false,
+        children: <Page1DetailB />
+    },
+]
+```
+```
+//Router.jsx　ネストが浅いところ　（ルートの配列を呼び出す）
+       <Switch>
+        <Route exact path="/">
+            <Home />
+        </Route>
+        <Route path="/page1" render={({ match: { url }}) => (
+        <Switch>
+           {Page1Routes.map((route) => (
+            <Route key={route.path} exact={route.exact} path={`${url}${route.path}`}>
+                {route.children}
+            </Route>
+           ))}
+        </Switch>
+        )}
+        />
+        <Route path="/page2">
+            <Page2 />
+        </Route>
+    </Switch>
+
+```
+その後、親コンポーネントで呼び出す。<Router />
+
+
 
