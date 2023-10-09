@@ -147,5 +147,48 @@ const Emotion = () => {
 ```
 他にはstyled componentsと同じ書き方が使える
 
+##　ページ遷移
 
+- <BrowserRouter>で囲われた部分でルーティングの機能が使えるようになる
+- exactは完全一致
+- Linkはaタグと一緒
+- switchの中にマッチしたコンポーネントを表示するか書く
+```
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+```
+
+- ネストされたページ遷移
+```
+  <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/page1" render={({ match: { url }}) => (
+          <Switch>
+            {console.log(url)}
+            <Route exact path={url}>
+              <Page1 />
+            </Route>
+            <Route path={`${url}/detailA`}>
+              <Page1DetailA />
+            </Route>
+            <Route path={`${url}/detailB`}>
+              <Page1DetailB />
+            </Route>
+          </Switch>
+          )}
+        />
+        <Route path="/page2">
+          <Page2 />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+```
 
