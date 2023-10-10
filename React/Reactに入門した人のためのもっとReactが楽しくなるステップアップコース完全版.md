@@ -313,3 +313,13 @@ const Page1 = () => {
       <button onClick={onClickDetailA}>DetailA</button>
     </div>
 ```
+
+## ４０４ページを用意
+- ページがないURLにアクセスすると白紙のページが表示されてしまう
+- ４０４のJSXを作る
+```
+//下記を追加
+        <Route path="*">
+            <Page404 />
+        </Route>
+```
