@@ -294,3 +294,22 @@ const Page1DetailA = () => {
     const { state } = useLocation();
     console.log(state)
 ```
+
+## Linkを使わないページ遷移
+- useHistoryをインポートする
+- 変数ににuseHistoryを入れる。
+- history.push(パス)でパスで指定した先に遷移する
+- 戻る場合はhistory.goBack（）で戻る
+```
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+
+const Page1 = () => {
+    const history = useHistory();
+
+    const onClickDetailA = () => history.push("/page1/detailA");
+
+  return (
+    <div>
+      <button onClick={onClickDetailA}>DetailA</button>
+    </div>
+```
