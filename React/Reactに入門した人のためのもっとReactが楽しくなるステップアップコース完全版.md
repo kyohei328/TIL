@@ -274,4 +274,23 @@ const query = new URLSearchParams(search);
 const query = new URLSearchParams(search);
 ```
 
+## stateを受け渡すページ遷移
+- 受け渡し側に state: arr　を書く
 
+```
+    const arr = [...Array(100).keys()];
+    console.log(arr)
+  return (
+    <div>
+      <h1>Page1ページです</h1>
+      <Link to={{ pathname: "/page1/detailA", state: arr }}>DetailA</Link>
+```
+- 受け取り側はuseLocationを使って受け取る
+
+```
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+
+const Page1DetailA = () => {
+    const { state } = useLocation();
+    console.log(state)
+```
