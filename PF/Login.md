@@ -14,3 +14,21 @@ https://ui.docs.amplify.aws/react/connected-components/authenticator/customizati
 }
 ```
 - サインアップとサインインが機能するか確認を行った。
+
+## 10/30
+- firebase Authentication の環境設定がReactとViteを使った場合で差異がある
+```
+------React--------------
+REACT_APP_API_KEY="my-api-key"
+REACT_APP_AUTH_DOMAIN="example.com"
+REACT_APP_DB_URL="https://example.com"
+REACT_APP_SECRET_KEY="my-secret-key"
+
+------Vite--------------
+VITE_API_KEY="my-api-key"
+
+```
+```
+## firebase.ts　読み込み部分のViteの場合
+apiKey: import.meta.env.VITE_FIREBASE_API_KEY
+```
