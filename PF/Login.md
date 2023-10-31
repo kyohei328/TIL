@@ -35,3 +35,12 @@ apiKey: import.meta.env.VITE_FIREBASE_API_KEY
 
 docker rails db:migrate
 https://qiita.com/tanitaku512/items/7976dc64446b86cb63d9
+
+## 10/31
+IDtokenの検証がうまくいかない理由
+- ヘッダーの設定ミス。下記のようにする
+```
+const config =  { 'Authorization': `Bearer ${token}` };
+
+axios.post("http://localhost:3000/api/v1/users", formData, { headers: config })
+``` 
