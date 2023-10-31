@@ -32,3 +32,6 @@ VITE_API_KEY="my-api-key"
 ## firebase.ts　読み込み部分のViteの場合
 apiKey: import.meta.env.VITE_FIREBASE_API_KEY
 ```
+
+docker rails db:migrate
+https://qiita.com/tanitaku512/items/7976dc64446b86cb63d9
