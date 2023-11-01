@@ -44,3 +44,6 @@ const config =  { 'Authorization': `Bearer ${token}` };
 
 axios.post("http://localhost:3000/api/v1/users", formData, { headers: config })
 ``` 
+## 11/1
+- プライバシーポリシーページの作成
+- tsxにベタ打ちにしているが、本リリースまでにはcssからインポートして表示できるようにしたい
