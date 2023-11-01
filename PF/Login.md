@@ -43,7 +43,9 @@ IDtokenの検証がうまくいかない理由
 const config =  { 'Authorization': `Bearer ${token}` };
 
 axios.post("http://localhost:3000/api/v1/users", formData, { headers: config })
-``` 
+```
+https://qiita.com/k-yasuhiro/items/95a60618d9743e3749a2
+
 ## 11/1
 - プライバシーポリシーページの作成
 - tsxにベタ打ちにしているが、本リリースまでにはcssからインポートして表示できるようにしたい
