@@ -58,3 +58,9 @@ https://qiita.com/k-yasuhiro/items/95a60618d9743e3749a2
 - 画像アップロード用のAWS S3の設定
 - サインアップ機能ができなくなっていたので、修正。includeのパス間違い
 - 画像アップロードページのユーザーのIDトークンの取得を追加。Hookshは関数コンポーネントのトップレベルで書くことに注意
+
+## 11/6
+- AWS s3にアップロードできるようにバックエンドを改修
+- https://qiita.com/kawa3401/items/c982ccebacf2faeae48d
+- https://tech.omablo.com/archives/861
+- https://zenn.dev/redheadchloe/articles/e924ab767b40d5
