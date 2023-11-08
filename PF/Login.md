@@ -64,3 +64,9 @@ https://qiita.com/k-yasuhiro/items/95a60618d9743e3749a2
 - https://qiita.com/kawa3401/items/c982ccebacf2faeae48d
 - https://tech.omablo.com/archives/861
 - https://zenn.dev/redheadchloe/articles/e924ab767b40d5
+
+## 11/7
+- 写真追加登録機能を実装
+
+## 11/8
+- コンテスト作成機能を実装
