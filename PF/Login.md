@@ -77,3 +77,8 @@ https://qiita.com/k-yasuhiro/items/95a60618d9743e3749a2
 
 # 11/10.11
 - TOPページの日によって写真をランダムに取得するロジックを検討
+
+# 11/12
+- wheneverで毎日０時にテーブルの情報を入れけるロジック組んだが、うまく行かない
+  rbenvを初期化しないとタスクが実行されない
+https://teratail.com/questions/248501
