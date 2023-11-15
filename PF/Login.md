@@ -83,8 +83,21 @@ https://qiita.com/k-yasuhiro/items/95a60618d9743e3749a2
   rbenvを初期化しないとタスクが実行されない
 https://teratail.com/questions/248501
 
-# 11/13
+## 11/13
 - 写真一覧ページ作成
 - 一覧ページはページの最下部までスクロールした際に次の写真を読み込むようにした
 - コンテストのトップページ作成
 - ヘッダーを表示しているページによって文字のスタイル変更をして、どのページいるか分かりやすいように
+
+## 11/14,15
+- フロントエンドをコンパルを実施。エラー解決に時間がかかった
+```
+Could not resolve "./core/styles-api/use-styles/get-class-name/get-window-class-names/get-window-class-names.mjs" from "node_modules/@mantine/core/esm/index.mjs"
+file: /Users/kyohei/workspace/pf/PhotoSpace/frontend/node_modules/@mantine/core/esm/index.mjs
+error during build:
+RollupError: Could not resolve "./core/styles-api/use-styles/get-class-name/get-window-class-names/get-window-class-names.mjs" from "node_modules/@mantine/core/esm/index.mjs"
+    at error (file:///Users/kyohei/workspace/pf/PhotoSpace/frontend/node_modules/rollup/dist/es/shared/node-entry.js:2287:30)
+    at ModuleLoader.handleInvalidResolvedId (file:///Users/kyohei/workspace/pf/PhotoSpace/frontend/node_modules/rollup/dist/es/shared/node-entry.js:24860:24)
+    at file:///Users/kyohei/workspace/pf/PhotoSpace/frontend/node_modules/rollup/dist/es/shared/node-entry.js:24822:26
+error Command failed with exit code 1.
+```
