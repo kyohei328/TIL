@@ -104,3 +104,7 @@ error Command failed with exit code 1.
 
 ## 11/16,17
 - コンテスト応募機能を実装
+
+## 11/20
+- ECSにデプロイを実施中。 railsがデプロイ時にエラー発生して苦戦している。
+- Nginxについてはデプロイ可能
