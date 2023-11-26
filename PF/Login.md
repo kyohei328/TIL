@@ -118,3 +118,6 @@ error Command failed with exit code 1.
 
 ## 11/25
 - コンテスト投票機能を実装
+
+# 11/26
+- 写真のお気に入り機能を実装
