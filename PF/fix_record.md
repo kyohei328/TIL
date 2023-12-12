@@ -158,6 +158,7 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 
 ## 12/12
 - 本番環境デプロイ後の動作不良の調整のため、調整項目の抜き出し
+  https://zenn.dev/redgosho/articles/13b93d2a8eac0f
 
 
 
