@@ -152,6 +152,7 @@ error Command failed with exit code 1.
 ## 12/11
 -  HerokuへRailsをデプロイ
 -  本番環境で必要なツールをHerokuへ（Exiftoolなど）
+https://exiftool.org/forum/index.php?topic=13328.0
 -  SQLをMySQL→PostgreSQLへ変更（herokuの支払い登録の認証が降りないため）
 https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 
