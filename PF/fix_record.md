@@ -152,6 +152,8 @@ error Command failed with exit code 1.
 ## 12/11
 -  HerokuへRailsをデプロイ
 -  本番環境で必要なツールをHerokuへ（Exiftoolなど）
+-  SQLをMySQL→PostgreSQLへ変更（herokuの支払い登録の認証が降りないため）
+https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 
 ## 12/12
 - 本番環境デプロイ後の動作不良の調整のため、調整項目の抜き出し
