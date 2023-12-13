@@ -162,5 +162,9 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 - cloudfrontの設定（リリース前の修正）
   https://qiita.com/koharu_s/items/9361da2ae59929a4a804
 
-
+##12/13
+- herokuにスケジューラーを追加（Railsで写真をランダムで取得する用）
+  https://qiita.com/sharesence/items/74a85a08add91a0fd8d8
+- TopPageの新着コンテストの部門をクリックしたとき、コンテストがないと画面が表示されなくなる不具合を修正
+- Railsのtaskで実行するSQLをPostgreSQL用へ変更
 
