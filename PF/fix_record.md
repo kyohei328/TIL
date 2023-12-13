@@ -167,4 +167,6 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
   https://qiita.com/sharesence/items/74a85a08add91a0fd8d8
 - TopPageの新着コンテストの部門をクリックしたとき、コンテストがないと画面が表示されなくなる不具合を修正
 - Railsのtaskで実行するSQLをPostgreSQL用へ変更
-
+- mypageのprofile変更で空白のまま更新すると空白が適用されてしまうのを修正
+- コンテストの画像が表示されないエラーを修正
+- 
