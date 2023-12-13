@@ -169,4 +169,5 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 - Railsのtaskで実行するSQLをPostgreSQL用へ変更
 - mypageのprofile変更で空白のまま更新すると空白が適用されてしまうのを修正
 - コンテストの画像が表示されないエラーを修正
+- ログインページとユーザー登録ページを日本語化
 - 
