@@ -174,4 +174,4 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 - 
 
 ## 12/18,19,20
-- geIdtokeエラーの修正
+- geIdtokenエラーの修正
