@@ -215,3 +215,7 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 ## 1/29, 30
 - コンテストTOPページのSwiperのネストを作成中
 
+## 2/3, 2/4
+- TOPページのデザイン変更（今日の写真と新着コンテストを横並びに変更）
+
+
