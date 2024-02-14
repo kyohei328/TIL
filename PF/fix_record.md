@@ -224,3 +224,6 @@ https://qiita.com/vinaka/items/fbdb17bebe75d40de995
 
 ## 2/6 
 - 写真アップロードにカテゴリーを追加
+
+## 2/10,11,12
+- TOPページのPC用レスポンシブの設定
